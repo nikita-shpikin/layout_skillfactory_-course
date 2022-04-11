@@ -9,7 +9,7 @@
   justify-content: space-evenly;
 }
 
-.header__design {
+.nav__design {
   font-size: 11px;
   line-height: 15px;
   text-transform: uppercase;
@@ -27,12 +27,12 @@
   color: var(--main-color);
 }
 
-.header__number {
+.nav__number {
   font-size: 11px;
   color: var(--main-color);
 }
 
-.header__button {
+.nav__button {
   width: 161px;
   height: 37px;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -41,7 +41,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .header__button {
+  .nav__button {
     display: none;
   }
 }

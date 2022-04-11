@@ -1,4 +1,4 @@
-@import url(./header.css);
+@import url(./nav.css);
 
 @font-face {
   font-family: 'Yeseva One';
@@ -44,7 +44,7 @@ body * {
   cursor: pointer;
 }
 
-.menu {
+.nav-menu {
   display: flex;
   margin-right: 47px;
   list-style-type: none;
@@ -98,7 +98,7 @@ body * {
 }
 
 @media screen and (max-width: 1024px) {
-  .menu {
+  .nav-menu {
     display: none;
   }
 }
