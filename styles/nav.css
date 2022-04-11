@@ -41,7 +41,17 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .nav-container {
+    width: 90%;
+  }
+
   .nav__button {
     display: none;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .nav__number {
+    color: #fff;
   }
 }

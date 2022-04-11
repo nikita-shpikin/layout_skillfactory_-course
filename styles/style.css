@@ -1,4 +1,5 @@
 @import url(./nav.css);
+@import url(./turnkey.css);
 
 @font-face {
   font-family: 'Yeseva One';
@@ -48,53 +49,6 @@ body * {
   display: flex;
   margin-right: 47px;
   list-style-type: none;
-}
-
-.label {
-  display: flex;
-}
-
-.label>input {
-  display: none;
-}
-
-.label__fake::before {
-  content: "";
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  border-radius: 1px;
-  background-color: #e3b873;
-}
-
-.label>input:checked+.label__fake::before {
-  content: "";
-  text-align: center;
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  border-radius: 1px;
-  background-color: #e3b873;
-  background-image: url("../images/control/svg/checkbox.svg");
-  background-repeat: no-repeat;
-  background-position: 4px;
-}
-
-.input {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  color: #ffffff;
-}
-
-.input::placeholder {
-  color: #ffffff;
-}
-
-.info {
-  display: block;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,0 +1,150 @@
+.turnkey {
+  background-image: url("../images/turnkey/turnkey.jpg");
+  background-size: cover;
+  height: 707px;
+}
+
+.turnkey-black {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 707px;
+}
+
+.turnkey-conteiner {
+  height: 707px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.turnkey-body {
+  margin-left: 134px;
+}
+
+.turnkey__title {
+  font-size: 40px;
+  line-height: 53px;
+  color: #ffffff;
+  width: 50%;
+}
+
+.turnkey__title_gold {
+  color: var(--main-color);
+}
+
+.turnkey__text {
+  margin: 19px 0 0 0;
+  font-size: 22px;
+  line-height: 36px;
+  color: #ffffff;
+  width: 50%;
+}
+
+.turnkey-buttons {
+  margin: 40px 0 0 0;
+}
+
+.turnkey__button {
+  width: 207px;
+  height: 51px;
+  background: rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  font-size: 11px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.turnkey__button_right {
+  margin-left: 20px;
+}
+
+.turnkey__button:hover {
+  color: #ffffff;
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  border: 1px solid #e3b873;
+}
+
+@media screen and (max-width: 1024px) {
+  .turnkey {
+    height: 520px;
+  }
+
+  .turnkey-black {
+    height: 520px;
+  }
+
+  .turnkey-conteiner {
+    height: 520px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .turnkey {
+    height: 476px;
+  }
+
+  .turnkey-black {
+    height: 476px;
+  }
+
+  .turnkey-conteiner {
+    height: 476px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .turnkey-body {
+    margin: auto;
+  }
+
+  .turnkey__title {
+    font-size: 23px;
+    text-align: left;
+    margin: auto;
+  }
+
+  .turnkey__text {
+    font-size: 14px;
+    text-align: left;
+    margin: auto;
+  }
+
+  .turnkey-buttons {
+    margin: 20px auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .turnkey__button {
+    width: 50%;
+  }
+
+  .turnkey__button_right {
+    margin: 20px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .turnkey__title {
+    width: 90%;
+    line-height: 35px;
+    margin-bottom: 16px;
+  }
+
+  .turnkey__text {
+    width: 90%;
+    line-height: 25px;
+    margin-bottom: 42px;
+  }
+
+  .turnkey__button {
+    width: 90%;
+  }
+}
