@@ -1,0 +1,47 @@
+.nav {
+  background: #131313;
+}
+
+.nav-container {
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header__design {
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.nav__link {
+  font-size: 11px;
+  margin-left: 47px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: var(--main-color);
+}
+
+.header__number {
+  font-size: 11px;
+  color: var(--main-color);
+}
+
+.header__button {
+  width: 161px;
+  height: 37px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  font-style: italic;
+  font-size: 11px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__button {
+    display: none;
+  }
+}
