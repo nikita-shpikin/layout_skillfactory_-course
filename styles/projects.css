@@ -14,13 +14,10 @@
 }
 
 .projects__title {
-  font-family: 'Yeseva One';
   font-style: normal;
-  font-weight: 400;
   font-size: 27px;
   line-height: 37px;
   letter-spacing: -0.07em;
-  text-transform: uppercase;
   color: var(--main-color);
   max-width: 253px;
 }
@@ -195,6 +192,7 @@
 
   .projects-info {
     margin-top: 550px;
+    max-width: 500px;
   }
 
   .projects-arrows {
@@ -245,6 +243,7 @@
 
   .projects-info {
     margin-top: 400px;
+    width: 90%;
   }
 }
 
@@ -260,5 +259,13 @@
 
   .projects-info {
     margin-top: 300px;
+  }
+
+  .projects-info {
+    width: 80%;
+  }
+
+  .projects__text {
+    max-width: 300px;
   }
 }
