@@ -1,0 +1,56 @@
+.fantasies {
+  margin-top: 240px;
+  height: 865px;
+  background-image: url(../images/fantasies/image.jpg);
+  background-size: cover;
+}
+
+.fantasies-black {
+  height: 865px;
+  background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.container-fantasies {
+  display: flex;
+}
+
+.fantasies-content {
+  padding: 137px 77px 97px 99px;
+}
+
+.fantasies__title {
+  font-style: normal;
+  font-size: 27px;
+  line-height: 37px;
+  color: #E3B873;
+  margin-bottom: 47px;
+}
+
+.fantasies-content__item {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  list-style-type: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.fantasies-content__item:hover {
+  color: #E3B873;
+}
+
+
+.fantasies-images__item:nth-child(1) {
+  background-image: url(../images/fantasies/american/one.jpg);
+  height: 557px;
+  width: 354px;
+  margin-top: -41px;
+}
+
+.fantasies-images__item:nth-child(2) {
+  background-image: url(../images/fantasies/american/tow.jpg);
+  height: 275px;
+  width: 354px;
+}
