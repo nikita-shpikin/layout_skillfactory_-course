@@ -27,7 +27,6 @@
 }
 
 .fantasies-content__item {
-  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -35,12 +34,21 @@
   list-style-type: none;
   color: #FFFFFF;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .fantasies-content__item:hover {
   color: #E3B873;
 }
 
+.fantasies-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fantasies-images__item {
+  margin: 22px;
+}
 
 .fantasies-images__item:nth-child(1) {
   background-image: url(../images/fantasies/american/one.jpg);
@@ -50,7 +58,22 @@
 }
 
 .fantasies-images__item:nth-child(2) {
-  background-image: url(../images/fantasies/american/tow.jpg);
+  background-image: url(../images/fantasies/american/two.jpg);
   height: 275px;
   width: 354px;
+  margin-top: -112px;
+}
+
+.fantasies-images__item:nth-child(3) {
+  background-image: url(../images/fantasies/american/thre.jpg);
+  height: 349px;
+  width: 354px;
+  margin-top: 21px;
+}
+
+.fantasies-images__item:nth-child(4) {
+  background-image: url(../images/fantasies/american/four.jpg);
+  height: 624px;
+  width: 354px;
+  margin-top: -340px;
 }
