@@ -46,6 +46,14 @@
   flex-wrap: wrap;
 }
 
+.fantasies-images_forSmall {
+  display: none;
+  background-image: url(../images/fantasies/image.jpg);
+  height: 500px;
+  width: 500px;
+  background-size: cover;
+}
+
 .fantasies-images__item {
   margin: 22px;
 }
@@ -76,4 +84,88 @@
   height: 624px;
   width: 354px;
   margin-top: -340px;
+}
+
+@media screen and (max-width: 1266px) {
+  .fantasies {
+    margin-top: 850px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .fantasies {
+    margin-top: 700px;
+  }
+
+  .fantasies-images_gold {
+    margin: 0 13px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container-fantasies {
+    flex-direction: column;
+  }
+
+  .fantasies-content>ul {
+    display: none;
+  }
+
+  .fantasies-images {
+    display: none;
+  }
+
+  .fantasies-images_forSmall {
+    display: block;
+  }
+
+  .container-fantasies {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .fantasies {
+    margin-top: 500px;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .fantasies {
+    margin-top: 1006px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .fantasies {
+    margin-top: 550px;
+    background-image: none;
+    height: 1050px;
+  }
+
+  .fantasies-black {
+    background: #fff;
+    height: 600px;
+  }
+
+  .fantasies-content {
+    padding: 0;
+  }
+
+  .fantasies__title {
+    text-align: center;
+    max-width: 340px;
+    margin-bottom: 25px;
+  }
+
+  .fantasies-images_forSmall {
+    position: relative;
+    background-image: url(../images/fantasies/imageForSmall.jpg);
+    height: 242px;
+    width: 340px
+  }
 }
