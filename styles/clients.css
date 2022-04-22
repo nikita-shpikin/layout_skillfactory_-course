@@ -60,6 +60,7 @@
   margin-top: 39px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .clients-people__card {
@@ -132,4 +133,30 @@
   width: 100%;
   height: 425px;
   opacity: 0.05;
+}
+
+@media screen and (max-width: 1128px) {
+  .clients {
+    height: 1450px;
+  }
+
+  .clients-people {
+    justify-content: center;
+  }
+
+  .clients-people__card {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .clients {
+    height: 1300px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  .clients {
+    display: none;
+  }
 }
