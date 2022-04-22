@@ -130,19 +130,19 @@
 
 @media screen and (max-width: 915px) {
   .fantasies {
-    margin-top: 500px;
+    margin-top: 450px;
   }
 }
 
 @media screen and (max-width: 844px) {
   .fantasies {
-    margin-top: 1006px;
+    margin-top: 650px;
   }
 }
 
 @media screen and (max-width: 570px) {
   .fantasies {
-    margin-top: 550px;
+    margin-top: 552px;
     background-image: none;
     height: 1050px;
   }
