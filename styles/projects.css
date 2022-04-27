@@ -115,6 +115,7 @@
   line-height: 19px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .projects-menu__item:hover {
@@ -134,7 +135,6 @@
   height: 100%;
   max-width: 679px;
   width: 100%;
-  background-image: url(../images/projects/one.jpg);
   background-size: cover;
 }
 
