@@ -136,6 +136,8 @@
   max-width: 679px;
   width: 100%;
   background-size: cover;
+
+  transition: background 2s ease;
 }
 
 .projects-arrows_gold {
