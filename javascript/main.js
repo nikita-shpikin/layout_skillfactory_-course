@@ -136,3 +136,7 @@ buttonsGold[1].addEventListener("click", () => {
 
   createProject(step);
 })
+
+setInterval(() => {
+  createProject(Math.floor(Math.random() * projects.length));
+}, 4000);
