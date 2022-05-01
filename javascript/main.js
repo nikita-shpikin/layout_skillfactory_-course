@@ -57,9 +57,9 @@ const createProject = (index) => {
   stylePage(index);
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  createProject(step);
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   createProject(step);
+// });
 
 const buttons = document.querySelectorAll('.projects-arrows__arrow');
 
@@ -137,6 +137,55 @@ buttonsGold[1].addEventListener("click", () => {
   createProject(step);
 })
 
-setInterval(() => {
-  createProject(Math.floor(Math.random() * projects.length));
-}, 4000);
+document.addEventListener("DOMContentLoaded", function () {
+  createProject(step);
+
+  setInterval(() => {
+    let index = Math.floor(Math.random() * projects.length);
+
+    if (step == index) {
+      switch (index) {
+        case 0:
+          index = 1; step = 1; break;
+        case 1:
+          index = 2; step = 2; break;
+        default:
+          index = 0; step = 0; break;
+      }
+    } else {
+      step = index;
+    }
+    createProject(index);
+  }, 5000);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
