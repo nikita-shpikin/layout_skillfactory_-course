@@ -57,10 +57,6 @@ const createProject = (index) => {
   stylePage(index);
 }
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   createProject(step);
-// });
-
 const buttons = document.querySelectorAll('.projects-arrows__arrow');
 
 let step = 0;
@@ -87,15 +83,12 @@ menu.forEach(function (item, index) {
     switch (index) {
       case 0:
         step = 0;
-        console.log(0);
         break;
       case 1:
         step = 1;
-        console.log(1);
         break;
       case 2:
         step = 2;
-        console.log(2);
         break;
     }
   })
@@ -156,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
       step = index;
     }
     createProject(index);
-  }, 5000);
+  }, 4000);
 });
 
 
