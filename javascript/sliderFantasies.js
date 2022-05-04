@@ -17,6 +17,55 @@ const imagesFantasies = [
     three: "./images/fantasies/сlassical/three.jpg",
     four: "./images/fantasies/сlassical/four.jpg",
   },
+  {
+    one: "./images/fantasies/loft/one.jpg",
+    two: "./images/fantasies/loft/two.jpg",
+    three: "./images/fantasies/loft/three.jpg",
+    four: "./images/fantasies/loft/four.jpg",
+  },
+  {
+    one: "./images/fantasies/minimalism/one.jpg",
+    two: "./images/fantasies/minimalism/two.jpg",
+    three: "./images/fantasies/minimalism/three.jpg",
+    four: "./images/fantasies/minimalism/four.jpg",
+  },
+  {
+    one: "./images/fantasies/provence/one.jpg",
+    two: "./images/fantasies/provence/two.jpg",
+    three: "./images/fantasies/provence/three.jpg",
+    four: "./images/fantasies/provence/four.jpg",
+  },
+  {
+    one: "./images/fantasies/romanticism/one.jpg",
+    two: "./images/fantasies/romanticism/two.jpg",
+    three: "./images/fantasies/romanticism/three.jpg",
+    four: "./images/fantasies/romanticism/four.jpg",
+  },
+  {
+    one: "./images/fantasies/scandinavian/one.jpg",
+    two: "./images/fantasies/scandinavian/two.jpg",
+    three: "./images/fantasies/scandinavian/three.jpg",
+    four: "./images/fantasies/scandinavian/four.jpg",
+  },
+  {
+    one: "./images/fantasies/mediterranean/one.jpg",
+    two: "./images/fantasies/mediterranean/two.jpg",
+    three: "./images/fantasies/mediterranean/three.jpg",
+    four: "./images/fantasies/mediterranean/four.jpg",
+  },
+  {
+    one: "./images/fantasies/highTech/one.jpg",
+    two: "./images/fantasies/highTech/two.jpg",
+    three: "./images/fantasies/highTech/three.jpg",
+    four: "./images/fantasies/highTech/four.jpg",
+  },
+  {
+    one: "./images/fantasies/eclecticism/one.jpg",
+    two: "./images/fantasies/eclecticism/two.jpg",
+    three: "./images/fantasies/eclecticism/three.jpg",
+    four: "./images/fantasies/eclecticism/four.jpg",
+  },
+
 ];
 
 const items = document.querySelectorAll('.fantasies-content__item');
