@@ -55,12 +55,13 @@
   height: 500px;
   width: 500px;
   background-size: cover;
+  background-position: center;
+  transition: background 1s ease;
 }
 
 .fantasies-images__item {
   margin: 22px;
   background-size: cover;
-
   transition: background 1s ease;
 }
 
@@ -166,7 +167,6 @@
 
   .fantasies-images_forSmall {
     position: relative;
-    /* background-image: url(../images/fantasies/imageForSmall.jpg); */
     height: 242px;
     width: 340px;
     z-index: 1
