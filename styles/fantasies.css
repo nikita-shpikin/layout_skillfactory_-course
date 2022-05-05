@@ -61,6 +61,8 @@
 .fantasies-images__item {
   margin: 22px;
   background-size: cover;
+
+  transition: background 2s ease;
 }
 
 .fantasies-images__item:nth-child(1) {
