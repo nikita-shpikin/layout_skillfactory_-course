@@ -52,7 +52,6 @@
 
 .fantasies-images_forSmall {
   display: none;
-  background-image: url(../images/fantasies/image.jpg);
   height: 500px;
   width: 500px;
   background-size: cover;
@@ -62,7 +61,7 @@
   margin: 22px;
   background-size: cover;
 
-  transition: background 2s ease;
+  transition: background 1s ease;
 }
 
 .fantasies-images__item:nth-child(1) {
@@ -167,7 +166,7 @@
 
   .fantasies-images_forSmall {
     position: relative;
-    background-image: url(../images/fantasies/imageForSmall.jpg);
+    /* background-image: url(../images/fantasies/imageForSmall.jpg); */
     height: 242px;
     width: 340px;
     z-index: 1

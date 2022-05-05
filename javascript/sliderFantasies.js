@@ -1,101 +1,132 @@
 const imagesFantasies = [
-  {
-    one: "./images/fantasies/american/one.jpg",
-    two: "./images/fantasies/american/two.jpg",
-    three: "./images/fantasies/american/three.jpg",
-    four: "./images/fantasies/american/four.jpg",
-  },
-  {
-    one: "./images/fantasies/empire/one.jpg",
-    two: "./images/fantasies/empire/two.jpg",
-    three: "./images/fantasies/empire/three.jpg",
-    four: "./images/fantasies/empire/four.jpg",
-  },
-  {
-    one: "./images/fantasies/сlassical/one.jpg",
-    two: "./images/fantasies/сlassical/two.jpg",
-    three: "./images/fantasies/сlassical/three.jpg",
-    four: "./images/fantasies/сlassical/four.jpg",
-  },
-  {
-    one: "./images/fantasies/loft/one.jpg",
-    two: "./images/fantasies/loft/two.jpg",
-    three: "./images/fantasies/loft/three.jpg",
-    four: "./images/fantasies/loft/four.jpg",
-  },
-  {
-    one: "./images/fantasies/minimalism/one.jpg",
-    two: "./images/fantasies/minimalism/two.jpg",
-    three: "./images/fantasies/minimalism/three.jpg",
-    four: "./images/fantasies/minimalism/four.jpg",
-  },
-  {
-    one: "./images/fantasies/provence/one.jpg",
-    two: "./images/fantasies/provence/two.jpg",
-    three: "./images/fantasies/provence/three.jpg",
-    four: "./images/fantasies/provence/four.jpg",
-  },
-  {
-    one: "./images/fantasies/romanticism/one.jpg",
-    two: "./images/fantasies/romanticism/two.jpg",
-    three: "./images/fantasies/romanticism/three.jpg",
-    four: "./images/fantasies/romanticism/four.jpg",
-  },
-  {
-    one: "./images/fantasies/scandinavian/one.jpg",
-    two: "./images/fantasies/scandinavian/two.jpg",
-    three: "./images/fantasies/scandinavian/three.jpg",
-    four: "./images/fantasies/scandinavian/four.jpg",
-  },
-  {
-    one: "./images/fantasies/mediterranean/one.jpg",
-    two: "./images/fantasies/mediterranean/two.jpg",
-    three: "./images/fantasies/mediterranean/three.jpg",
-    four: "./images/fantasies/mediterranean/four.jpg",
-  },
-  {
-    one: "./images/fantasies/highTech/one.jpg",
-    two: "./images/fantasies/highTech/two.jpg",
-    three: "./images/fantasies/highTech/three.jpg",
-    four: "./images/fantasies/highTech/four.jpg",
-  },
-  {
-    one: "./images/fantasies/eclecticism/one.jpg",
-    two: "./images/fantasies/eclecticism/two.jpg",
-    three: "./images/fantasies/eclecticism/three.jpg",
-    four: "./images/fantasies/eclecticism/four.jpg",
-  },
-
+  [
+    "./images/fantasies/american/one.jpg",
+    "./images/fantasies/american/two.jpg",
+    "./images/fantasies/american/three.jpg",
+    "./images/fantasies/american/four.jpg",
+  ],
+  [
+    "./images/fantasies/empire/one.jpg",
+    "./images/fantasies/empire/two.jpg",
+    "./images/fantasies/empire/three.jpg",
+    "./images/fantasies/empire/four.jpg",
+  ],
+  [
+    "./images/fantasies/сlassical/one.jpg",
+    "./images/fantasies/сlassical/two.jpg",
+    "./images/fantasies/сlassical/three.jpg",
+    "./images/fantasies/сlassical/four.jpg",
+  ],
+  [
+    "./images/fantasies/loft/one.jpg",
+    "./images/fantasies/loft/two.jpg",
+    "./images/fantasies/loft/three.jpg",
+    "./images/fantasies/loft/four.jpg",
+  ],
+  [
+    "./images/fantasies/minimalism/one.jpg",
+    "./images/fantasies/minimalism/two.jpg",
+    "./images/fantasies/minimalism/three.jpg",
+    "./images/fantasies/minimalism/four.jpg",
+  ],
+  [
+    "./images/fantasies/provence/one.jpg",
+    "./images/fantasies/provence/two.jpg",
+    "./images/fantasies/provence/three.jpg",
+    "./images/fantasies/provence/four.jpg",
+  ],
+  [
+    "./images/fantasies/romanticism/one.jpg",
+    "./images/fantasies/romanticism/two.jpg",
+    "./images/fantasies/romanticism/three.jpg",
+    "./images/fantasies/romanticism/four.jpg",
+  ],
+  [
+    "./images/fantasies/scandinavian/one.jpg",
+    "./images/fantasies/scandinavian/two.jpg",
+    "./images/fantasies/scandinavian/three.jpg",
+    "./images/fantasies/scandinavian/four.jpg",
+  ],
+  [
+    "./images/fantasies/mediterranean/one.jpg",
+    "./images/fantasies/mediterranean/two.jpg",
+    "./images/fantasies/mediterranean/three.jpg",
+    "./images/fantasies/mediterranean/four.jpg",
+  ],
+  [
+    "./images/fantasies/highTech/one.jpg",
+    "./images/fantasies/highTech/two.jpg",
+    "./images/fantasies/highTech/three.jpg",
+    "./images/fantasies/highTech/four.jpg",
+  ],
+  [
+    "./images/fantasies/eclecticism/one.jpg",
+    "./images/fantasies/eclecticism/two.jpg",
+    "./images/fantasies/eclecticism/three.jpg",
+    "./images/fantasies/eclecticism/four.jpg",
+  ],
 ];
 
-const items = document.querySelectorAll('.fantasies-content__item');
+const listsFantasies = document.querySelectorAll('.fantasies-content__item');
 const imagesBlock = document.querySelectorAll('.fantasies-images__item');
 
-function styleIList(index) {
-  items.forEach(function (item) {
+function styleIListFantasies(index) {
+  listsFantasies.forEach(function (item) {
     item.classList.remove('fantasies-content__item_active');
   });
-  items[index].classList.add('fantasies-content__item_active');
-}
+  listsFantasies[index].classList.add('fantasies-content__item_active');
+};
 
-for (let i = 0; i < items.length; i++) {
+function getImagesFantasies(index) {
+  imagesBlock[0].style.backgroundImage = `url(${imagesFantasies[index][0]})`;
+  imagesBlock[1].style.backgroundImage = `url(${imagesFantasies[index][1]})`;
+  imagesBlock[2].style.backgroundImage = `url(${imagesFantasies[index][2]})`;
+  imagesBlock[3].style.backgroundImage = `url(${imagesFantasies[index][3]})`;
+};
 
-  items[i].addEventListener('click', () => {
-    styleIList(i);
-
+for (let i = 0; i < listsFantasies.length; i++) {
+  listsFantasies[i].addEventListener('click', () => {
+    styleIListFantasies(i);
     getImagesFantasies(i);
   })
-}
-
-const getImagesFantasies = (index) => {
-  imagesBlock[0].style.backgroundImage = `url(${imagesFantasies[index].one})`;
-  imagesBlock[1].style.backgroundImage = `url(${imagesFantasies[index].two})`;
-  imagesBlock[2].style.backgroundImage = `url(${imagesFantasies[index].three})`;
-  imagesBlock[3].style.backgroundImage = `url(${imagesFantasies[index].four})`;
-}
+};
 
 document.addEventListener("DOMContentLoaded", function () {
-  let index = 0;
-  getImagesFantasies(index);
-  styleIList(index);
+  getImagesFantasies(indexFantasies);
+  styleIListFantasies(indexFantasies);
+
+});
+
+let indexFantasies = 0;
+
+
+
+const arrowsFantasies = document.querySelectorAll('.fantasies-arrows');
+const fantasiesImagesForSmall = document.querySelector('.fantasies-images_forSmall');
+
+function getImagesForSmall(index) {
+  fantasiesImagesForSmall.style.backgroundImage = `url(${'./images/fantasies/imageForSmall.jpg'})`;
+}
+
+arrowsFantasies[0].addEventListener('click', () => {
+  if (index === 0) {
+    index = projects.length - 1;
+  } else index--;
+
+  console.log('left')
+  createImagesFantasies(index);
+});
+
+arrowsFantasies[1].addEventListener('click', () => {
+  if (index === projects.length - 1) {
+    index = 0;
+  } else index++;
+
+  console.log('right')
+  createImagesFantasies(index);
+})
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  getImagesForSmall(0);
 })

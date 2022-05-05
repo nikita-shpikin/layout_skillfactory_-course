@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
       step = index;
     }
     createProject(index);
-  }, 4000);
+  }, 8000);
 });
 
 
