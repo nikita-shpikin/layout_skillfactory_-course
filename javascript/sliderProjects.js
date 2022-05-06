@@ -1,21 +1,21 @@
 const projects = [
   {
-    city: "Rostov-on-Don LCD admiral",
-    "apartment area": "81 m2",
-    "repair time": "3.5 months",
-    image: "./images/projects/one.jpg"
+    city: 'Rostov-on-Don LCD admiral',
+    'apartment area': '81 m2',
+    'repair time': '3.5 months',
+    image: './images/projects/one.jpg'
   },
   {
-    city: "Sochi Thieves",
-    "apartment area": "105 m2",
-    "repair time": "4 months",
-    image: "./images/projects/two.jpg"
+    city: 'Sochi Thieves',
+    'apartment area': '105 m2',
+    'repair time': '4 months',
+    image: './images/projects/two.jpg'
   },
   {
-    city: "Rostov-on-Don Patriotic",
-    "apartment area": "93 m2",
-    "repair time": "3 months",
-    image: "./images/projects/there.jpg"
+    city: 'Rostov-on-Don Patriotic',
+    'apartment area': '93 m2',
+    'repair time': '3 months',
+    image: './images/projects/there.jpg'
   }
 ];
 
@@ -23,8 +23,8 @@ let city = []; let area = []; let time = []; let image = [];
 
 for (i = 0; i < projects.length; i++) {
   city[i] = projects[i].city;
-  area[i] = projects[i]["apartment area"];
-  time[i] = projects[i]["repair time"];
+  area[i] = projects[i]['apartment area'];
+  time[i] = projects[i]['repair time'];
   image[i] = projects[i].image;
 }
 
@@ -111,7 +111,6 @@ page.forEach(function (item, index) {
   })
 })
 
-
 const buttonsGold = document.querySelectorAll('.projects-arrows_gold__item');
 
 buttonsGold[0].addEventListener('click', () => {
@@ -122,7 +121,7 @@ buttonsGold[0].addEventListener('click', () => {
   createProject(step);
 });
 
-buttonsGold[1].addEventListener("click", () => {
+buttonsGold[1].addEventListener('click', () => {
   if (step === 0) {
     step = projects.length - 1;
   } else step--;
@@ -130,7 +129,7 @@ buttonsGold[1].addEventListener("click", () => {
   createProject(step);
 })
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
   createProject(step);
 
   setInterval(() => {
@@ -140,8 +139,6 @@ document.addEventListener("DOMContentLoaded", function () {
       switch (index) {
         case 0:
           index = 1; step = 1; break;
-        case 1:
-          index = 2; step = 2; break;
         default:
           index = 0; step = 0; break;
       }

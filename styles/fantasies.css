@@ -1,5 +1,5 @@
 .fantasies {
-  margin-top: 240px;
+  margin-top: 200px;
   height: 865px;
   background-image: url(../images/fantasies/image.jpg);
   background-size: cover;
@@ -62,6 +62,7 @@
 .fantasies-images__item {
   margin: 22px;
   background-size: cover;
+  background-position: center;
   transition: background 1s ease;
 }
 
@@ -89,16 +90,17 @@
   margin-top: -340px;
 }
 
+@media screen and (max-width: 1292px) {
+  .fantasies {
+    margin-top: 650px;
+  }
+}
+
 @media screen and (max-width: 1266px) {
   .fantasies {
     margin-top: 850px;
   }
-}
 
-@media screen and (max-width: 1240px) {
-  .fantasies {
-    margin-top: 700px;
-  }
 
   .fantasies-images_gold {
     margin: 0 13px;
@@ -128,6 +130,12 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .fantasies {
+    margin-top: 700px;
   }
 }
 

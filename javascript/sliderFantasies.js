@@ -123,8 +123,9 @@ arrowsFantasies[1].addEventListener('click', () => {
   getImagesForSmall(indexFantasiesForSmall);
 })
 
+let indexFantasies = 0;
+
 document.addEventListener('DOMContentLoaded', function () {
-  let indexFantasies = 0;
 
   getImagesFantasies(indexFantasies);
   styleIListFantasies(indexFantasies);
@@ -147,25 +148,32 @@ document.addEventListener('DOMContentLoaded', function () {
       indexFantasies = indexRandomFantasiesSmall;
     }
     getImagesForSmall(indexRandomFantasiesSmall);
-  }, 4000);
+
+    // console.log(indexFantasies)
+
+  }, 8000);
 
   setInterval(() => {
     let indexRandomFantasies = Math.floor(Math.random() * imagesFantasies.length);
 
-    if (indexFantasies == indexRandomFantasies) {
+    if (indexRandomFantasies == indexFantasies) {
       switch (indexRandomFantasies) {
-        case 0:
-          indexRandomFantasies = 1; indexFantasies = 1; break;
         case 1:
-          indexRandomFantasies = 2; indexFantasies = 2; break;
+          indexRandomFantasies = 10; indexFantasies = 10;
+          //  console.log('switch'); 
+          break;
         default:
-          indexRandomFantasies = 0; indexFantasies = 0; break;
+          indexRandomFantasies = 1; indexFantasies = 1;
+          // console.log('switch'); 
+          break;
       }
     } else {
       indexFantasies = indexRandomFantasies;
     }
+
+    // console.log(indexFantasies, indexRandomFantasies);
+
     getImagesFantasies(indexFantasies);
     styleIListFantasies(indexFantasies);
-    console.log(indexFantasies)
-  }, 4000);
+  }, 8000);
 });
