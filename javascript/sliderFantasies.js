@@ -70,14 +70,14 @@ const imagesFantasies = [
 const listsFantasies = document.querySelectorAll('.fantasies-content__item');
 const imagesBlock = document.querySelectorAll('.fantasies-images__item');
 
-function styleIListFantasies(index) {
+export function styleIListFantasies(index) {
   listsFantasies.forEach(function (item) {
     item.classList.remove('fantasies-content__item_active');
   });
   listsFantasies[index].classList.add('fantasies-content__item_active');
 };
 
-function getImagesFantasies(index) {
+export function getImagesFantasies(index) {
   imagesBlock[0].style.backgroundImage = `url(${imagesFantasies[index][0]})`;
   imagesBlock[1].style.backgroundImage = `url(${imagesFantasies[index][1]})`;
   imagesBlock[2].style.backgroundImage = `url(${imagesFantasies[index][2]})`;
@@ -101,11 +101,11 @@ const imagesFantasiesForSmall = [
 const arrowsFantasies = document.querySelectorAll('.fantasies-arrows');
 const fantasiesImagesForSmall = document.querySelector('.fantasies-images_forSmall');
 
-function getImagesForSmall(index) {
+export function getImagesForSmall(index) {
   fantasiesImagesForSmall.style.backgroundImage = `url(${imagesFantasiesForSmall[index]})`;
 }
 
-let indexFantasiesForSmall = 0;
+export let indexFantasiesForSmall = 0;
 
 arrowsFantasies[0].addEventListener('click', () => {
   if (indexFantasiesForSmall === 0) {
@@ -123,57 +123,50 @@ arrowsFantasies[1].addEventListener('click', () => {
   getImagesForSmall(indexFantasiesForSmall);
 })
 
-let indexFantasies = 0;
+export let indexFantasies = 0;
 
-document.addEventListener('DOMContentLoaded', function () {
+
+export function intervalFantasiesSmall() {
+  let indexRandomFantasiesSmall = Math.floor(Math.random() * imagesFantasiesForSmall.length);
+
+  if (indexFantasies == indexRandomFantasiesSmall) {
+    switch (indexRandomFantasiesSmall) {
+      case 0:
+        indexRandomFantasiesSmall = 1; indexFantasies = 1; break;
+      case 1:
+        indexRandomFantasiesSmall = 2; indexFantasies = 2; break;
+      default:
+        indexRandomFantasiesSmall = 0; indexFantasies = 0; break;
+    }
+  } else {
+    indexFantasies = indexRandomFantasiesSmall;
+  }
+  getImagesForSmall(indexRandomFantasiesSmall);
+
+  // console.log(indexFantasies)
+}
+
+export function intervalFantasies() {
+
+  let indexRandomFantasies = Math.floor(Math.random() * imagesFantasies.length);
+
+  if (indexRandomFantasies == indexFantasies) {
+    switch (indexRandomFantasies) {
+      case 1:
+        indexRandomFantasies = 10; indexFantasies = 10;
+        //  console.log('switch'); 
+        break;
+      default:
+        indexRandomFantasies = 1; indexFantasies = 1;
+        // console.log('switch'); 
+        break;
+    }
+  } else {
+    indexFantasies = indexRandomFantasies;
+  }
+
+  // console.log(indexFantasies, indexRandomFantasies);
 
   getImagesFantasies(indexFantasies);
   styleIListFantasies(indexFantasies);
-
-  getImagesForSmall(indexFantasiesForSmall);
-
-  setInterval(() => {
-    let indexRandomFantasiesSmall = Math.floor(Math.random() * imagesFantasiesForSmall.length);
-
-    if (indexFantasies == indexRandomFantasiesSmall) {
-      switch (indexRandomFantasiesSmall) {
-        case 0:
-          indexRandomFantasiesSmall = 1; indexFantasies = 1; break;
-        case 1:
-          indexRandomFantasiesSmall = 2; indexFantasies = 2; break;
-        default:
-          indexRandomFantasiesSmall = 0; indexFantasies = 0; break;
-      }
-    } else {
-      indexFantasies = indexRandomFantasiesSmall;
-    }
-    getImagesForSmall(indexRandomFantasiesSmall);
-
-    // console.log(indexFantasies)
-
-  }, 8000);
-
-  setInterval(() => {
-    let indexRandomFantasies = Math.floor(Math.random() * imagesFantasies.length);
-
-    if (indexRandomFantasies == indexFantasies) {
-      switch (indexRandomFantasies) {
-        case 1:
-          indexRandomFantasies = 10; indexFantasies = 10;
-          //  console.log('switch'); 
-          break;
-        default:
-          indexRandomFantasies = 1; indexFantasies = 1;
-          // console.log('switch'); 
-          break;
-      }
-    } else {
-      indexFantasies = indexRandomFantasies;
-    }
-
-    // console.log(indexFantasies, indexRandomFantasies);
-
-    getImagesFantasies(indexFantasies);
-    styleIListFantasies(indexFantasies);
-  }, 8000);
-});
+}

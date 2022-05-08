@@ -21,6 +21,7 @@ const projects = [
 
 let city = []; let area = []; let time = []; let image = [];
 
+let i;
 for (i = 0; i < projects.length; i++) {
   city[i] = projects[i].city;
   area[i] = projects[i]['apartment area'];
@@ -47,7 +48,7 @@ function stylePage(index) {
   page[index].classList.add('projects-arrows__circle_active');
 }
 
-const createProject = (index) => {
+export const createProject = (index) => {
   text[0].innerText = city[index];
   text[1].innerText = area[index];
   text[2].innerText = time[index];
@@ -59,7 +60,7 @@ const createProject = (index) => {
 
 const buttons = document.querySelectorAll('.projects-arrows__arrow');
 
-let step = 0;
+export let step = 0;
 
 buttons[0].addEventListener('click', () => {
   if (step === 0) {
@@ -129,28 +130,21 @@ buttonsGold[1].addEventListener('click', () => {
   createProject(step);
 })
 
-document.addEventListener('DOMContentLoaded', function () {
-  createProject(step);
+export let intervalCreateProject = function () {
+  let index = Math.floor(Math.random() * projects.length);
 
-  setInterval(() => {
-    let index = Math.floor(Math.random() * projects.length);
-
-    if (step == index) {
-      switch (index) {
-        case 0:
-          index = 1; step = 1; break;
-        default:
-          index = 0; step = 0; break;
-      }
-    } else {
-      step = index;
+  if (step == index) {
+    switch (index) {
+      case 0:
+        index = 1; step = 1; break;
+      default:
+        index = 0; step = 0; break;
     }
-    createProject(index);
-  }, 8000);
-});
-
-
-
+  } else {
+    step = index;
+  }
+  createProject(index);
+}
 
 
 
