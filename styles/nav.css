@@ -1,5 +1,8 @@
 .nav {
   background: #131313;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .nav-container {
@@ -41,6 +44,10 @@
 }
 
 @media screen and (max-width: 1062px) {
+  .nav {
+    position: static;
+  }
+
   .nav-container {
     width: 90%;
   }
