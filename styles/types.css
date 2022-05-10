@@ -54,7 +54,8 @@
   position: absolute;
   top: 295px;
   left: 30px;
-  width: 330px;
+  max-width: 330px;
+  width: 100%;
   height: 286px;
   background: #FFFFFF;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
@@ -321,5 +322,13 @@
 @media screen and (max-width: 630px) {
   .types {
     margin-top: 50px;
+  }
+
+  .types-wrapper__item {
+    /* background-size: contain; */
+  }
+
+  .types-wrapper__repair {
+    left: 0;
   }
 }

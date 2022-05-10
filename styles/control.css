@@ -215,7 +215,7 @@
   }
 
   .control-wrapper {
-    width: 340px;
+    max-width: 90%;
     height: 207px;
   }
 

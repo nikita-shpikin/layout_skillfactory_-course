@@ -175,3 +175,9 @@
     z-index: 1
   }
 }
+
+@media screen and (max-width: 380px) {
+  .fantasies-images_forSmall {
+    max-width: 90%;
+  }
+}
