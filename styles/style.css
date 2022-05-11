@@ -51,12 +51,6 @@ body * {
   cursor: pointer;
 }
 
-.nav-menu {
-  display: flex;
-  margin-right: 47px;
-  list-style-type: none;
-}
-
 .label {
   display: flex;
 }
@@ -96,10 +90,4 @@ body * {
 
 .input::placeholder {
   color: #ffffff;
-}
-
-@media screen and (max-width: 1024px) {
-  .nav-menu {
-    display: none;
-  }
 }

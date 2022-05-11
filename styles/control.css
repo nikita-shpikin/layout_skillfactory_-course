@@ -146,7 +146,7 @@
   }
 
   .control-wrapper {
-    margin-top: 6px;
+    margin-top: 50px;
     width: 600px;
     height: 300px;
   }
@@ -215,8 +215,8 @@
   }
 
   .control-wrapper {
-    max-width: 90%;
-    height: 207px;
+    max-width: 380px;
+    height: 208px;
   }
 
   .control__play {
@@ -253,5 +253,17 @@
 
   .control-form__button {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .control-wrapper {
+    max-width: 85%;
+    height: 207px;
+  }
+
+  .control__text {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

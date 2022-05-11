@@ -43,17 +43,29 @@
   font-size: 11px;
 }
 
-@media screen and (max-width: 1062px) {
-  .nav {
-    position: static;
-  }
+.nav-menu {
+  display: flex;
+  margin-right: 47px;
+  list-style-type: none;
+}
 
+@media screen and (max-width: 1062px) {
   .nav-container {
     width: 90%;
   }
 
   .nav__button {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav {
+    position: static;
   }
 }
 

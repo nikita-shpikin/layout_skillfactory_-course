@@ -136,12 +136,6 @@
 
 @media screen and (max-width: 915px) {
   .fantasies {
-    margin-top: 450px;
-  }
-}
-
-@media screen and (max-width: 844px) {
-  .fantasies {
     margin-top: 650px;
   }
 }
@@ -173,6 +167,13 @@
     height: 242px;
     width: 340px;
     z-index: 1
+  }
+}
+
+
+@media screen and (max-width: 430px) {
+  .fantasies {
+    margin-top: 50px;
   }
 }
 

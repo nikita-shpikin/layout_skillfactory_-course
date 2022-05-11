@@ -193,7 +193,7 @@
   }
 
   .projects-info {
-    margin-top: 550px;
+    margin-top: 530px;
     max-width: 500px;
   }
 
@@ -221,9 +221,7 @@
   .projects-picture {
     margin: auto;
   }
-}
 
-@media screen and (max-width: 844px) {
   .projects__title {
     text-align: center;
   }
@@ -256,7 +254,7 @@
   }
 
   .projects-image {
-    margin-top: -440px;
+    margin-top: -470px;
   }
 
   .projects-info {
