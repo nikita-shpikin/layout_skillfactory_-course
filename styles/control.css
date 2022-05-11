@@ -141,7 +141,7 @@
 
 @media screen and (max-width: 1024px) {
   .control {
-    height: 850px;
+    height: 900px;
     margin-top: -85px;
   }
 
@@ -242,7 +242,7 @@
   }
 
   .control-info__item:last-child {
-    margin-top: 150px;
+    margin-top: 155px;
     display: flex;
     justify-content: center;
   }
