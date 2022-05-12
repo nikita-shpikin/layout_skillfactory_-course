@@ -245,6 +245,10 @@
     margin-top: 400px;
     width: 90%;
   }
+
+  .projects-info__text {
+    max-width: 100px;
+  }
 }
 
 @media screen and (max-width: 475px) {

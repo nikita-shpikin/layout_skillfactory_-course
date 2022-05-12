@@ -125,7 +125,7 @@
 
 @media screen and (max-width: 570px) {
   .location-black {
-    height: 1159px;
+    height: 1161px;
     background: #181818;
   }
 
@@ -162,6 +162,7 @@
   .location__title {
     position: relative;
     top: 350px;
+    padding: 0 10px;
   }
 
   .location-social {
