@@ -165,8 +165,6 @@ export function intervalFantasies() {
     indexFantasies = indexRandomFantasies;
   }
 
-  // console.log(indexFantasies, indexRandomFantasies);
-
   getImagesFantasies(indexFantasies);
   styleIListFantasies(indexFantasies);
 }

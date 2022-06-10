@@ -633,7 +633,6 @@ body * {
   border-top: none;
   border-right: none;
   border-left: none;
-  color: #fff;
 }
 
 .control-form__button {
@@ -742,6 +741,8 @@ body * {
     font-size: 11px;
     max-width: 350px;
     line-height: 169.8%;
+    height: 130px;
+    overflow: hidden;
   }
 
   .control-info {
@@ -777,8 +778,8 @@ body * {
   }
 
   .control__text {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -1106,6 +1107,10 @@ body * {
 @media screen and (max-width: 724px) {
   .types {
     margin-top: 50px;
+  }
+
+  .control-form__input {
+    color: #fff;
   }
 }
 
@@ -1487,6 +1492,16 @@ body * {
   }
 }
 
+@media screen and (max-width: 960px) {
+  .clients {
+    height: 1480px;
+  }
+
+  .clients-homes {
+    margin-top: -200px;
+  }
+}
+
 @media screen and (max-width: 816px) {
   .clients {
     display: none;
@@ -1658,6 +1673,8 @@ body * {
     position: relative;
     top: 350px;
     padding: 0 10px;
+    height: 90px;
+    overflow: hidden;
   }
 
   .location-social {
